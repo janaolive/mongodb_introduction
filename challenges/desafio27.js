@@ -1,0 +1,1 @@
+db.produtos.find({ nome: { $in: [/^Mc/mi, /Mc/i] } }, {}).count();

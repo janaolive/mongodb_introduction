@@ -1,7 +1,7 @@
-db.produtos.find({
+db.produtos.find({ 
   valoresNutricionais: {
     $elemMatch: {
-      tip: "calorias",
+      tipo: "calorias",
       quantidade: { $lt: 500 },
     },
   },
